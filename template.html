@@ -1,0 +1,13 @@
+
+<B> File name: </B> {{ name }} <br>
+<B> Yara Hits: </B> {{ yara }} <br>
+<B> VT Response Code: </B> {{ VTResponse }} <br>
+<B> VT Verbose: </B> {{ VTVerbose }} <br>
+<B> VT Positive Hits: </B> {{ VTHits }} <br>
+{% if VTHits is number %}
+	<B> VT URL: </B> <a href=" {{ VTUrl }} "> Link to VirusTotal </a> <br>
+{% endif %}
+<B> URL to Report: </B> <a href=" {{ urlAddress }} "> {{ urlAddress }} </a> <br>
+<p>
+
+
